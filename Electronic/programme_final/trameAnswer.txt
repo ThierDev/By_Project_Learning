@@ -1,0 +1,47 @@
+﻿void trameAnswers(){
+
+digitalWrite(acti, LOW);
+  
+    if (Serial1.available()<=0){
+//VAL
+
+  float sensorValue = analogRead(24)*0.0008056640625; 
+  int VAL = 13*pow(sensorValue, -1); 
+  Serial.println(VAL);
+trame[9]=toText((VAL>>12)&0x0f);
+trame[10]=toText((VAL>>8)&0x0f);
+trame[11]=toText((VAL>>4)&0x0f);
+trame[12]=toText(VAL &0x0f);
+//TIM
+TIM = 0x0127;
+trame[13]=toText((TIM>>12)&0x0f);
+trame[14]=toText((TIM>>8)&0x0f);
+trame[15]=toText((TIM>>4)&0x0f);
+trame[16]=toText((TIM &0x0f));
+
+
+int pot = analogRead(28);
+//Serial.println(pot);
+//delay(100);
+
+if (pot>1000){
+ 
+//
+      for (int i=0;i<17;i++){
+          Serial1.print(trame[i]);
+          Serial.print(trame[i]);
+          delay(10);
+          
+      }
+      //CHK
+      trame[17]='1';
+      trame[18]='B';
+      
+      for (int i=17;i<19;i++){
+        Serial1.print(trame[i]);
+        Serial.print(trame[i]);
+        delay(10);
+      }
+      Serial.println();
+}
+}
