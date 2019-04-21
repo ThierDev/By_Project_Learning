@@ -1,8 +1,8 @@
 # By_Project_Learning
 
-#Project Structure
+# Project Structure
 
-(Images/Project_Strucuture.png)
+[![](Images/Project_Strucuture.jpg)]
 # WEB APP PRESENTATION (ENG)
 
 [![](http://img.youtube.com/vi/gxlGLnfkNvM/0.jpg)](http://www.youtube.com/watch?v=gxlGLnfkNvM "")
