@@ -2,7 +2,7 @@
 
 # Project Structure
 
-[![](Images/Project_Strucuture.jpg)]
+![Structure_Project](Images/Project_Structure.jpg)
 # WEB APP PRESENTATION (ENG)
 
 [![](http://img.youtube.com/vi/gxlGLnfkNvM/0.jpg)](http://www.youtube.com/watch?v=gxlGLnfkNvM "")
