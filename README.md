@@ -1,4 +1,6 @@
 # By_Project_Learning
+Where is the code ? Code is too messy, it's a team work with 6 persons.... :( So It was much more difficult to make something clean. Especially since we did not had the same programming experience. 
+
 
 # Project Structure
 
